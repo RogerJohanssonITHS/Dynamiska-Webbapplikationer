@@ -27,59 +27,56 @@
     <!-- This is the end of the section at the top on every page -->
 
     <h2>Bokningsformulär</h2>
-          <form>
-            <h3>Välj Datum:</h3>
-            <p>
-              <input type="checkbox" value = "30April" id="30April" />
-              <label for = "30April">30 April</label><br/>
-              <input type="checkbox" value = "2Maj" id = "2Maj"/>
-              <label for = "2Maj">2 Maj</label><br/>
-              <input type="checkbox" value = "7Maj" id = "7Maj" />
-              <label for = "7Maj">7 Maj</label><br/>
-              <input type="checkbox" value = "9Maj" id = "9Maj"/>
-              <label for = "9Maj">9 Maj</label><br/>
-              <input type="checkbox" value = "14Maj" id = "14Maj"/>
-              <label for = "14Maj">14 Maj</label><br/>
-              <input type="checkbox" value = "16Maj" id = "16Maj"/>
-              <label for = "16Maj">16 Maj</label>
-            </p>
-            <h3>Antal personer:</h3>
-            <p>
-              <select>
-                <option value ="1">1</option>
-                <option value ="2">2</option>
-                <option value ="3">3</option>
-                <option value ="4">4</option>
-                <option value ="5">6</option>
-                <option value ="7">7</option>
-                <option value ="8">8</option>
-                <option value ="9">9</option>
-                <option value ="10">10</option>
-                <option value ="11">11</option>
-                <option value ="12">12</option>
-              </select> 
-            </p>
-            <h3>Personlig Information</h3>
-            <p>
-              <label for = "firstName">Förnamn:</label>
-              <input type = "text" id = "firstName" required/><br/>
-              <label for = "lastName">Efternamn:</label>
-              <input type = "text" id = "lastName" required/><br/>
-              <label for = "mobileNumber">Mobil:</label>
-              <input type="tel" name="telphone" placeholder="xxxx-xxxxxx" pattern="[0-9]{4} [0-9]{6}" maxlength="12" id = "mobileNumber" required/><br/>
-              <label for = "email">Epost:</label>
-              <input type = "email" id = "email"  required/>
-            </p>
-            <h3>Meddelande</h3>
-            <p>
-              <textarea rows ="5" cols ="40" name = "message">
-                
-              </textarea>
-            </p>
-            <p>
-              <input type="submit" value="Bekräfta bokning" name="submit" />
-            </p>
-          </form>
+      <form>
+        <fieldset style="width:80%">
+          <legend>Välj datum:</legend>
+          <input style="margin-top: 8pt;" type="radio" id="30april" name="datum"/>
+          <label for = "30april">30 april</label><br/>
+          <input style="margin-top: 8pt;" type="radio" id="2maj" name="datum"/>
+          <label for = "2maj">2 maj</label><br/>
+          <input style="margin-top: 8pt;" type="radio" id="7maj" name="datum"/>
+          <label for = "7maj">7 maj</label><br/>
+          <input style="margin-top: 8pt;" type="radio" id="9maj" name="datum"/>
+          <label for = "9maj">9 maj</label><br/>
+          <input style="margin-top: 8pt;" type="radio" id="14maj" name="datum"/>
+          <label for = "14maj">14 maj</label><br/>
+          <input style="margin-top: 8pt;" type="radio" id="16maj" name="datum"/>
+          <label for = "16maj">16 maj</label><br/>
+        </fieldset>
+
+        <fieldset style="width:80%">
+          <legend>Välj antal personer:</legend>
+          <label for="antal"></label>
+          <select name="antal" id="antal">
+            <option value ="1">1</option>
+            <option value ="2">2</option>
+            <option value ="3">3</option>
+            <option value ="4">4</option>
+            <option value ="5">5</option>
+            <option value ="6">6</option>
+            <option value ="7">7</option>
+            <option value ="8">8</option>
+            <option value ="9">9</option>
+            <option value ="10">10</option>
+            <option value ="11">11</option>
+            <option value ="12">12</option>
+          </select>
+        </fieldset>
+
+        <fieldset style="width:80%">
+          <legend>Fyll i dina uppgifter</legend>
+          <label for = "namn">Namn:</label>
+          <input style="margin-top: 8pt;" type = "text" id = "namn" required/><br/>
+          <label for = "email">Email:</label>
+          <input style="margin-top: 8pt;" type = "email" id = "email"  required/><br/>
+          <label for = "mobilnummer">Mobilnummer:</label>
+          <input style="margin-top: 8pt;" type="tel" name="mobilnummer" placeholder="xxxx xxxxxx" pattern="[0-9]{4} [0-9]{6}" maxlength="11" id = "mobilnummer" required/><br/>
+          <label for = "meddelande">Meddelande</label>
+          <textarea style="margin-top: 8pt;" rows ="3" cols ="20" name = "meddelande">               
+          </textarea>
+        </fieldset>
+        <input type="submit" value="Boka" name="boka" />
+      </form>
     <footer><br><hr>&copy; Copyright 2022 | Café Choco-Latte</footer>
 </body>
 </html>

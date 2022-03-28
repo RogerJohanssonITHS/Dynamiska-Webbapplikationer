@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../stil/style.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <style>
+      table {
+          border-spacing: 45px;
+      }
+    </style>
     <title>Bokning</title>
 </head>
 <body>
-    <!-- This is the start of the section at the top on every page -->
-    <headerCafé Choco-Latte></header>
-    <table cellspacing="45"> 
-        <tr>
+    <!-- This is the start of the section at the top on every page -->   
+    <table> 
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>  
+      <tr>
             <td><a href="../index.html">HEM</a></td>
             <td><a href="./chokladprovning.html">CHOKLADPROVNING</a></td>
             <td><a href="#">BOKNING</a></td>
@@ -72,7 +82,7 @@
           <label for = "mobilnummer">Mobilnummer:</label>
           <input style="margin-top: 8pt;" type="tel" name="mobilnummer" placeholder="xxxx xxxxxx" pattern="[0-9]{4} [0-9]{6}" maxlength="11" id = "mobilnummer" required/><br/>
           <label for = "meddelande">Meddelande</label>
-          <textarea style="margin-top: 8pt;" rows ="3" cols ="20" name = "meddelande">               
+          <textarea style="margin-top: 8pt;" rows ="3" cols ="20" name = "meddelande" id = "meddelande">               
           </textarea>
         </fieldset>
         <input type="submit" value="Boka" name="boka" />
